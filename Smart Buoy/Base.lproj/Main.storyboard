@@ -59,27 +59,29 @@
                                     <segment title="Grid"/>
                                     <segment title="Map"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="LHX-Ha-7Pi" eventType="valueChanged" id="Qic-9u-CqD"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mmU-1a-nfF">
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2L5-RB-rCf">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m6U-Bf-JIW">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BeachCell" id="ACx-Et-uz5">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="BeachCell" reuseIdentifier="BeachCell" id="ACx-Et-uz5" customClass="BeachCell" customModule="Smart_Buoy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iiQ-ef-DwU">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-HA-oF9">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-HA-oF9">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ead-7X-aip">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -93,14 +95,22 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="IXi-HA-oF9" firstAttribute="leading" secondItem="iiQ-ef-DwU" secondAttribute="leading" id="IKm-Y9-1Ck"/>
                                                 <constraint firstItem="ead-7X-aip" firstAttribute="leading" secondItem="iiQ-ef-DwU" secondAttribute="leading" id="Ldg-iR-EhP"/>
+                                                <constraint firstAttribute="trailing" secondItem="IXi-HA-oF9" secondAttribute="trailing" id="MDX-7e-KTa"/>
+                                                <constraint firstAttribute="bottom" secondItem="IXi-HA-oF9" secondAttribute="bottom" id="YmK-vI-phw"/>
                                                 <constraint firstItem="sUo-Fc-b3w" firstAttribute="centerY" secondItem="iiQ-ef-DwU" secondAttribute="centerY" id="Z2P-7e-rdQ"/>
+                                                <constraint firstItem="IXi-HA-oF9" firstAttribute="top" secondItem="iiQ-ef-DwU" secondAttribute="top" id="fTH-3w-aJe"/>
                                                 <constraint firstItem="ead-7X-aip" firstAttribute="top" secondItem="iiQ-ef-DwU" secondAttribute="top" id="gAa-3S-mjB"/>
                                                 <constraint firstItem="sUo-Fc-b3w" firstAttribute="centerX" secondItem="iiQ-ef-DwU" secondAttribute="centerX" id="gnd-Jz-swX"/>
                                                 <constraint firstAttribute="trailing" secondItem="ead-7X-aip" secondAttribute="trailing" id="u0h-l1-L2F"/>
                                                 <constraint firstAttribute="bottom" secondItem="ead-7X-aip" secondAttribute="bottom" id="yTa-Ib-GuB"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="image" destination="IXi-HA-oF9" id="Rqe-z9-t5x"/>
+                                            <outlet property="label" destination="sUo-Fc-b3w" id="45x-23-N3q"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -123,6 +133,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="mmU-1a-nfF" id="LdF-e6-HNa"/>
+                        <outlet property="segment" destination="xvM-r8-bXc" id="qtg-dd-QRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQw-7p-cSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
