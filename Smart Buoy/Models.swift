@@ -19,5 +19,6 @@ struct Beach: Codable{
     let colorOfFlag: String
     let tempratureOfWater: Float
     let cleanlinessOfWater: String
+    let image: String
 }
 
