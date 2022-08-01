@@ -15,6 +15,7 @@
 		352182B72897B9B700464178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352182B52897B9B700464178 /* LaunchScreen.storyboard */; };
 		352182C12897BD8500464178 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352182BF2897BD8500464178 /* LabelTableViewCell.swift */; };
 		352182C22897BD8500464178 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352182C02897BD8500464178 /* LabelTableViewCell.xib */; };
+		358408A12897C0CB0018F41D /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = 358408A02897C0CB0018F41D /* database.json */; };
 		35C7B51F2897BF3B00EDD2B2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7B51E2897BF3B00EDD2B2 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		352182B82897B9B700464178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352182BF2897BD8500464178 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
 		352182C02897BD8500464178 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
+		358408A02897C0CB0018F41D /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
 		35C7B51E2897BF3B00EDD2B2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				352182AA2897B9B600464178 /* AppDelegate.swift */,
 				352182AC2897B9B600464178 /* SceneDelegate.swift */,
 				35C7B51E2897BF3B00EDD2B2 /* Models.swift */,
+				358408A02897C0CB0018F41D /* database.json */,
 				352182C32897BD8F00464178 /* Cells */,
 				352182BE2897BD5100464178 /* Controllers */,
 				352182B02897B9B600464178 /* Main.storyboard */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358408A12897C0CB0018F41D /* database.json in Resources */,
 				352182B72897B9B700464178 /* LaunchScreen.storyboard in Resources */,
 				352182B42897B9B700464178 /* Assets.xcassets in Resources */,
 				352182C22897BD8500464178 /* LabelTableViewCell.xib in Resources */,

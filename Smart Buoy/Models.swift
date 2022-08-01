@@ -8,6 +8,16 @@
 import Foundation
 
 struct City: Codable{
-    
+    let name: String
+    let beaches: [Beach]
+}
+
+struct Beach: Codable{
+    let name: String
+    let coorX: String
+    let coorY: String
+    let colorOfFlag: String
+    let tempratureOfWater: Float
+    let cleanlinessOfWater: String
 }
 
