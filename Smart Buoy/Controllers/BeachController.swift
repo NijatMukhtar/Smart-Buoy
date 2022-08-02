@@ -82,6 +82,7 @@ extension BeachController: UICollectionViewDelegate, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "BeachDataController") as! BeachDataController
         controller.beach = beaches[indexPath.row]
+        controller.title = beaches[indexPath.row].name
         navigationController?.show(controller, sender: nil)
     }
 }

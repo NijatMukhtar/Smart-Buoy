@@ -159,37 +159,42 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IUW-ZT-fIT">
                                 <rect key="frame" x="0.0" y="44" width="390" height="210"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-jH-dYf">
-                                <rect key="frame" x="0.0" y="262" width="390" height="481"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-jH-dYf">
+                                <rect key="frame" x="0.0" y="262" width="390" height="484"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="D9N-Ew-hNq" id="vU3-hy-IY2"/>
                                     <outlet property="delegate" destination="D9N-Ew-hNq" id="Obf-7T-hK8"/>
                                 </connections>
                             </tableView>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5U-gs-qHh">
+                                <rect key="frame" x="0.0" y="746" width="390" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-1V-uaR">
-                                <rect key="frame" x="0.0" y="743" width="390" height="67"/>
+                                <rect key="frame" x="0.0" y="746" width="390" height="98"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bxf-i4-hG6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GAf-1V-uaR" firstAttribute="top" secondItem="Th8-jH-dYf" secondAttribute="bottom" id="2JE-L9-1bI"/>
-                            <constraint firstItem="Th8-jH-dYf" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="5Ne-mW-PU1"/>
-                            <constraint firstItem="Th8-jH-dYf" firstAttribute="top" secondItem="IUW-ZT-fIT" secondAttribute="bottom" constant="8" id="719-mn-rT2"/>
-                            <constraint firstItem="Bxf-i4-hG6" firstAttribute="trailing" secondItem="GAf-1V-uaR" secondAttribute="trailing" id="DVC-OY-E3b"/>
-                            <constraint firstItem="GAf-1V-uaR" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="IkR-As-xYk"/>
-                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="Ki5-qg-dna"/>
-                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="trailing" secondItem="Bxf-i4-hG6" secondAttribute="trailing" id="L25-oE-cYi"/>
-                            <constraint firstItem="Bxf-i4-hG6" firstAttribute="trailing" secondItem="Th8-jH-dYf" secondAttribute="trailing" id="SmD-uV-fyJ"/>
-                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.248815" id="ery-Qt-CUy"/>
-                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="top" secondItem="Bxf-i4-hG6" secondAttribute="top" id="h1i-HM-xhd"/>
-                            <constraint firstItem="GAf-1V-uaR" firstAttribute="bottom" secondItem="Bxf-i4-hG6" secondAttribute="bottom" id="vUe-pA-Vk2"/>
-                            <constraint firstItem="Th8-jH-dYf" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.569905" id="yJM-RT-dCW"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.57346" id="Dcm-aZ-edU"/>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.116114" id="FSF-6K-FbQ"/>
+                            <constraint firstAttribute="bottom" secondItem="GAf-1V-uaR" secondAttribute="bottom" id="JA8-81-bka"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="UfJ-9f-g3n"/>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="trailing" secondItem="Bxf-i4-hG6" secondAttribute="trailing" id="cKF-7P-6hd"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.248815" id="caB-mC-4RZ"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="trailing" secondItem="Bxf-i4-hG6" secondAttribute="trailing" id="muU-OU-NVy"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="top" secondItem="IUW-ZT-fIT" secondAttribute="bottom" constant="8" symbolic="YES" id="o7h-Yf-pc0"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="tYL-kN-5Lg"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="top" secondItem="Bxf-i4-hG6" secondAttribute="top" id="tqU-8F-9rL"/>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="u08-wn-eZx"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="trailing" secondItem="Bxf-i4-hG6" secondAttribute="trailing" id="zPC-74-dhh"/>
                         </constraints>
                     </view>
                     <connections>

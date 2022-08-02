@@ -23,20 +23,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-2Y-T09">
-                        <rect key="frame" x="170" y="10.666666666666664" width="134" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-2Y-T09">
+                        <rect key="frame" x="170" y="11.666666666666664" width="134" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="b6v-HE-emQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ehq-yt-uFk"/>
-                    <constraint firstItem="b6v-HE-emQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pl4-Dw-iTj"/>
-                    <constraint firstAttribute="trailing" secondItem="PX8-2Y-T09" secondAttribute="trailing" constant="16" id="Sez-aN-0X1"/>
-                    <constraint firstItem="PX8-2Y-T09" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.41875" id="XNV-on-DV6"/>
-                    <constraint firstItem="b6v-HE-emQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45625" id="bHQ-JC-YSg"/>
-                    <constraint firstItem="PX8-2Y-T09" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hKE-VG-9Dj"/>
+                    <constraint firstItem="b6v-HE-emQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0hV-9g-htR"/>
+                    <constraint firstAttribute="trailing" secondItem="PX8-2Y-T09" secondAttribute="trailing" constant="16" id="Ok6-BE-AYU"/>
+                    <constraint firstItem="PX8-2Y-T09" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.41875" id="TfA-93-2Eo"/>
+                    <constraint firstItem="b6v-HE-emQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45625" id="hlF-iW-I4K"/>
+                    <constraint firstItem="b6v-HE-emQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rlD-Z2-aIT"/>
+                    <constraint firstItem="PX8-2Y-T09" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zlZ-bw-5Fp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
