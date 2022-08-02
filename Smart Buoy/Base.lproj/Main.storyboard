@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -53,16 +54,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xvM-r8-bXc">
-                                <rect key="frame" x="8" y="44" width="374" height="32"/>
-                                <segments>
-                                    <segment title="Grid"/>
-                                    <segment title="Map"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentTapped:" destination="LHX-Ha-7Pi" eventType="valueChanged" id="Qic-9u-CqD"/>
-                                </connections>
-                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mmU-1a-nfF">
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,27 +109,98 @@
                                     <outlet property="delegate" destination="LHX-Ha-7Pi" id="Na8-Vb-gIf"/>
                                 </connections>
                             </collectionView>
+                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="W4M-bS-eGZ">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2xF-Yh-l32">
+                                <rect key="frame" x="8" y="52" width="374" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Grid"/>
+                                    <segment title="Map"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="LHX-Ha-7Pi" eventType="valueChanged" id="JJA-JE-HL5"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wl3-G5-5MP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xvM-r8-bXc" firstAttribute="leading" secondItem="Wl3-G5-5MP" secondAttribute="leading" constant="8" id="58v-Yc-AAG"/>
-                            <constraint firstItem="mmU-1a-nfF" firstAttribute="top" secondItem="xvM-r8-bXc" secondAttribute="bottom" constant="16" id="AzB-dM-fgN"/>
-                            <constraint firstItem="Wl3-G5-5MP" firstAttribute="trailing" secondItem="xvM-r8-bXc" secondAttribute="trailing" constant="8" id="Ciq-Mi-dxR"/>
+                            <constraint firstItem="2xF-Yh-l32" firstAttribute="top" secondItem="Wl3-G5-5MP" secondAttribute="top" constant="8" id="7Gf-eh-xHJ"/>
+                            <constraint firstItem="Wl3-G5-5MP" firstAttribute="trailing" secondItem="2xF-Yh-l32" secondAttribute="trailing" constant="8" id="FEU-EI-jfh"/>
                             <constraint firstItem="mmU-1a-nfF" firstAttribute="leading" secondItem="Wl3-G5-5MP" secondAttribute="leading" id="Otu-yE-cBJ"/>
                             <constraint firstItem="Wl3-G5-5MP" firstAttribute="trailing" secondItem="mmU-1a-nfF" secondAttribute="trailing" id="X4V-U3-LI8"/>
                             <constraint firstItem="Wl3-G5-5MP" firstAttribute="bottom" secondItem="mmU-1a-nfF" secondAttribute="bottom" id="fg8-hQ-ybu"/>
-                            <constraint firstItem="xvM-r8-bXc" firstAttribute="top" secondItem="Wl3-G5-5MP" secondAttribute="top" id="oHR-Qu-TOl"/>
+                            <constraint firstItem="mmU-1a-nfF" firstAttribute="top" secondItem="2xF-Yh-l32" secondAttribute="bottom" constant="8" symbolic="YES" id="hbX-cQ-xEK"/>
+                            <constraint firstItem="2xF-Yh-l32" firstAttribute="leading" secondItem="Wl3-G5-5MP" secondAttribute="leading" constant="8" id="mVA-5h-S4B"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collection" destination="mmU-1a-nfF" id="LdF-e6-HNa"/>
-                        <outlet property="segment" destination="xvM-r8-bXc" id="qtg-dd-QRF"/>
+                        <outlet property="map" destination="W4M-bS-eGZ" id="bEp-wI-JDh"/>
+                        <outlet property="segment" destination="2xF-Yh-l32" id="MLE-qe-JWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQw-7p-cSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1636.9230769230769" y="3.5545023696682461"/>
+        </scene>
+        <!--Beach Data Controller-->
+        <scene sceneID="3Iu-n9-7dY">
+            <objects>
+                <viewController storyboardIdentifier="BeachDataController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D9N-Ew-hNq" customClass="BeachDataController" customModule="Smart_Buoy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DU8-Qz-sxS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IUW-ZT-fIT">
+                                <rect key="frame" x="0.0" y="44" width="390" height="210"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-jH-dYf">
+                                <rect key="frame" x="0.0" y="262" width="390" height="481"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="D9N-Ew-hNq" id="vU3-hy-IY2"/>
+                                    <outlet property="delegate" destination="D9N-Ew-hNq" id="Obf-7T-hK8"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-1V-uaR">
+                                <rect key="frame" x="0.0" y="743" width="390" height="67"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bxf-i4-hG6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="top" secondItem="Th8-jH-dYf" secondAttribute="bottom" id="2JE-L9-1bI"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="5Ne-mW-PU1"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="top" secondItem="IUW-ZT-fIT" secondAttribute="bottom" constant="8" id="719-mn-rT2"/>
+                            <constraint firstItem="Bxf-i4-hG6" firstAttribute="trailing" secondItem="GAf-1V-uaR" secondAttribute="trailing" id="DVC-OY-E3b"/>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="IkR-As-xYk"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="leading" secondItem="Bxf-i4-hG6" secondAttribute="leading" id="Ki5-qg-dna"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="trailing" secondItem="Bxf-i4-hG6" secondAttribute="trailing" id="L25-oE-cYi"/>
+                            <constraint firstItem="Bxf-i4-hG6" firstAttribute="trailing" secondItem="Th8-jH-dYf" secondAttribute="trailing" id="SmD-uV-fyJ"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.248815" id="ery-Qt-CUy"/>
+                            <constraint firstItem="IUW-ZT-fIT" firstAttribute="top" secondItem="Bxf-i4-hG6" secondAttribute="top" id="h1i-HM-xhd"/>
+                            <constraint firstItem="GAf-1V-uaR" firstAttribute="bottom" secondItem="Bxf-i4-hG6" secondAttribute="bottom" id="vUe-pA-Vk2"/>
+                            <constraint firstItem="Th8-jH-dYf" firstAttribute="height" secondItem="DU8-Qz-sxS" secondAttribute="height" multiplier="0.569905" id="yJM-RT-dCW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beachImage" destination="IUW-ZT-fIT" id="VzB-b8-cTv"/>
+                        <outlet property="label" destination="GAf-1V-uaR" id="gAv-im-hLJ"/>
+                        <outlet property="table" destination="Th8-jH-dYf" id="hAx-GV-mBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzT-d0-Ben" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287.6923076923076" y="3.5545023696682461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A5h-uI-bM5">
@@ -165,6 +227,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

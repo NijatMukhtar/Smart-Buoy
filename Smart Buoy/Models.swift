@@ -17,7 +17,7 @@ struct Beach: Codable{
     let coorX: String
     let coorY: String
     let colorOfFlag: String
-    let tempratureOfWater: Float
+    let tempratureOfWater: String
     let cleanlinessOfWater: String
     let image: String
 }

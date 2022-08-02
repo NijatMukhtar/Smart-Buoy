@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35055BC628992E930044AA4F /* BeachDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35055BC528992E930044AA4F /* BeachDataController.swift */; };
 		352182AB2897B9B600464178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352182AA2897B9B600464178 /* AppDelegate.swift */; };
 		352182AD2897B9B600464178 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352182AC2897B9B600464178 /* SceneDelegate.swift */; };
 		352182AF2897B9B600464178 /* CitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352182AE2897B9B600464178 /* CitiesController.swift */; };
@@ -18,10 +19,13 @@
 		358408A12897C0CB0018F41D /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = 358408A02897C0CB0018F41D /* database.json */; };
 		358408A32897C9160018F41D /* BeachController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358408A22897C9160018F41D /* BeachController.swift */; };
 		358408A52897CEB50018F41D /* BeachCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358408A42897CEB50018F41D /* BeachCell.swift */; };
+		358AE3C4289930F60040F747 /* BeachDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AE3C2289930F60040F747 /* BeachDataCell.swift */; };
+		358AE3C5289930F60040F747 /* BeachDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358AE3C3289930F60040F747 /* BeachDataCell.xib */; };
 		35C7B51F2897BF3B00EDD2B2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7B51E2897BF3B00EDD2B2 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35055BC528992E930044AA4F /* BeachDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDataController.swift; sourceTree = "<group>"; };
 		352182A72897B9B600464178 /* Smart Buoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Buoy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		352182AA2897B9B600464178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		352182AC2897B9B600464178 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 		358408A02897C0CB0018F41D /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
 		358408A22897C9160018F41D /* BeachController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachController.swift; sourceTree = "<group>"; };
 		358408A42897CEB50018F41D /* BeachCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCell.swift; sourceTree = "<group>"; };
+		358AE3C2289930F60040F747 /* BeachDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDataCell.swift; sourceTree = "<group>"; };
+		358AE3C3289930F60040F747 /* BeachDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDataCell.xib; sourceTree = "<group>"; };
 		35C7B51E2897BF3B00EDD2B2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +78,8 @@
 				352182AC2897B9B600464178 /* SceneDelegate.swift */,
 				35C7B51E2897BF3B00EDD2B2 /* Models.swift */,
 				358408A02897C0CB0018F41D /* database.json */,
-				352182C32897BD8F00464178 /* Cells */,
 				352182BE2897BD5100464178 /* Controllers */,
+				352182C32897BD8F00464178 /* Cells */,
 				352182B02897B9B600464178 /* Main.storyboard */,
 				352182B32897B9B700464178 /* Assets.xcassets */,
 				352182B52897B9B700464178 /* LaunchScreen.storyboard */,
@@ -87,6 +93,7 @@
 			children = (
 				352182AE2897B9B600464178 /* CitiesController.swift */,
 				358408A22897C9160018F41D /* BeachController.swift */,
+				35055BC528992E930044AA4F /* BeachDataController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +104,8 @@
 				352182BF2897BD8500464178 /* LabelTableViewCell.swift */,
 				352182C02897BD8500464178 /* LabelTableViewCell.xib */,
 				358408A42897CEB50018F41D /* BeachCell.swift */,
+				358AE3C2289930F60040F747 /* BeachDataCell.swift */,
+				358AE3C3289930F60040F747 /* BeachDataCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 				358408A12897C0CB0018F41D /* database.json in Resources */,
 				352182B72897B9B700464178 /* LaunchScreen.storyboard in Resources */,
 				352182B42897B9B700464178 /* Assets.xcassets in Resources */,
+				358AE3C5289930F60040F747 /* BeachDataCell.xib in Resources */,
 				352182C22897BD8500464178 /* LabelTableViewCell.xib in Resources */,
 				352182B22897B9B600464178 /* Main.storyboard in Resources */,
 			);
@@ -179,8 +189,10 @@
 				352182C12897BD8500464178 /* LabelTableViewCell.swift in Sources */,
 				352182AD2897B9B600464178 /* SceneDelegate.swift in Sources */,
 				358408A52897CEB50018F41D /* BeachCell.swift in Sources */,
+				35055BC628992E930044AA4F /* BeachDataController.swift in Sources */,
 				35C7B51F2897BF3B00EDD2B2 /* Models.swift in Sources */,
 				358408A32897C9160018F41D /* BeachController.swift in Sources */,
+				358AE3C4289930F60040F747 /* BeachDataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,7 @@
 				DEVELOPMENT_TEAM = 93GUC69XMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Smart Buoy/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,6 +372,7 @@
 				DEVELOPMENT_TEAM = 93GUC69XMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Smart Buoy/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
