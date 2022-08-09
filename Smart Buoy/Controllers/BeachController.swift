@@ -57,6 +57,22 @@ extension BeachController: UICollectionViewDelegate, UICollectionViewDataSource,
         let controller = storyboard?.instantiateViewController(withIdentifier: "BeachDataController") as! BeachDataController
         controller.beach = beaches[indexPath.row]
         controller.title = beaches[indexPath.row].name
+        switch(indexPath.item % 3){
+            case 0:
+                controller.labelText = "Swimming is not permitted"
+                controller.labelColor = .red
+                print("red")
+            case 1:
+                controller.labelText = "Swimming is permitted"
+                controller.labelColor = .green
+                print("green")
+            case 2:
+                controller.labelText = "Swimming is permitted with extra attention"
+                controller.labelColor = .yellow
+                print("yellow")
+            default:
+        break;
+        }
         navigationController?.show(controller, sender: nil)
     }
     

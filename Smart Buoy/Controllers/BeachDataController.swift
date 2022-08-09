@@ -12,15 +12,19 @@ class BeachDataController: UIViewController {
     @IBOutlet weak var beachImage: UIImageView!
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var label: UILabel!
+    
     var beach: Beach?
+    var labelText: String?
+    var labelColor: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        label.text = labelText
+        label.backgroundColor = labelColor
+        
         table.register(UINib(nibName: "BeachDataCell", bundle: nil), forCellReuseIdentifier: "BeachDataCell")
-        
-        
-    }
+        }
 
     override func viewWillAppear(_ animated: Bool) {
         beachImage.image = UIImage(named: beach!.image)
@@ -44,7 +48,6 @@ extension BeachDataController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             cell.label1.text = "Wave Height: "
             cell.label2.text = beach!.waveHeight
-            
         case 2:
             cell.label1.text = "Cleanliness of Water: "
             cell.label2.text = beach?.cleanlinessOfWater
@@ -53,6 +56,8 @@ extension BeachDataController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+    
+
     
     
 }

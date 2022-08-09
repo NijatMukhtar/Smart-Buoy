@@ -73,6 +73,81 @@
         "image": "beach10",
     },
  ]
+},
+{
+ "name": "Baku",
+ "beaches": [
+    {
+      "name": "Shikh Beach",
+      "waveHeight": "1.1m",
+      "tempratureOfWater": "22C",
+      "cleanlinessOfWater": "Bad",
+      "image": "beach11",
+    },
+    {
+        "name": "Mambo Beach Club",
+        "waveHeight": "1.6m",
+        "tempratureOfWater": "12C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach21",
+    },
+    {
+        "name": "1001 Gecə Çimərliyi",
+        "waveHeight": "0.9m",
+        "tempratureOfWater": "24C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach31",
+    },
+    {
+        "name": "Bilgah Beach Hotel",
+        "waveHeight": "2.2m",
+        "tempratureOfWater": "23C",
+        "cleanlinessOfWater": "Good",
+        "image": "beach41",
+    },
+    {
+        "name": "Blue Wave Beach Resort",
+        "waveHeight": "1.5m",
+        "tempratureOfWater": "22C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach51",
+    },
+    {
+        "name": "Buzovna beach",
+        "waveHeight": "0.6m",
+        "tempratureOfWater": "23C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach61",
+    },
+    {
+        "name": "Sunny Beach Zagulba",
+        "waveHeight": "1.1m",
+        "tempratureOfWater": "25C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach71",
+    },
+    {
+        "name": "Amburan Beach Club",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "23C",
+        "cleanlinessOfWater": "Good",
+        "image": "beach81",
+    },
+    {
+        "name": "Dostluq Cimerlik",
+        "waveHeight": "0.9m",
+        "tempratureOfWater": "21C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach91",
+    },
+    {
+        "name": "Mayak Beach",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "12C",
+        "cleanlinessOfWater": "Ok",
+        "image": "beach101",
+    },
+ ]
  
 }
 ]
