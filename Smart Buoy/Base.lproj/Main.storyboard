@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -55,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mmU-1a-nfF">
-                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m6U-Bf-JIW">
                                     <size key="itemSize" width="128" height="128"/>
@@ -109,39 +108,18 @@
                                     <outlet property="delegate" destination="LHX-Ha-7Pi" id="Na8-Vb-gIf"/>
                                 </connections>
                             </collectionView>
-                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="W4M-bS-eGZ">
-                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2xF-Yh-l32">
-                                <rect key="frame" x="8" y="52" width="374" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <segments>
-                                    <segment title="Grid"/>
-                                    <segment title="Map"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentTapped:" destination="LHX-Ha-7Pi" eventType="valueChanged" id="JJA-JE-HL5"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wl3-G5-5MP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2xF-Yh-l32" firstAttribute="top" secondItem="Wl3-G5-5MP" secondAttribute="top" constant="8" id="7Gf-eh-xHJ"/>
-                            <constraint firstItem="Wl3-G5-5MP" firstAttribute="trailing" secondItem="2xF-Yh-l32" secondAttribute="trailing" constant="8" id="FEU-EI-jfh"/>
+                            <constraint firstItem="mmU-1a-nfF" firstAttribute="top" secondItem="Wl3-G5-5MP" secondAttribute="top" id="NbQ-Gh-XWh"/>
                             <constraint firstItem="mmU-1a-nfF" firstAttribute="leading" secondItem="Wl3-G5-5MP" secondAttribute="leading" id="Otu-yE-cBJ"/>
                             <constraint firstItem="Wl3-G5-5MP" firstAttribute="trailing" secondItem="mmU-1a-nfF" secondAttribute="trailing" id="X4V-U3-LI8"/>
                             <constraint firstItem="Wl3-G5-5MP" firstAttribute="bottom" secondItem="mmU-1a-nfF" secondAttribute="bottom" id="fg8-hQ-ybu"/>
-                            <constraint firstItem="mmU-1a-nfF" firstAttribute="top" secondItem="2xF-Yh-l32" secondAttribute="bottom" constant="8" symbolic="YES" id="hbX-cQ-xEK"/>
-                            <constraint firstItem="2xF-Yh-l32" firstAttribute="leading" secondItem="Wl3-G5-5MP" secondAttribute="leading" constant="8" id="mVA-5h-S4B"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collection" destination="mmU-1a-nfF" id="LdF-e6-HNa"/>
-                        <outlet property="map" destination="W4M-bS-eGZ" id="bEp-wI-JDh"/>
-                        <outlet property="segment" destination="2xF-Yh-l32" id="MLE-qe-JWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQw-7p-cSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

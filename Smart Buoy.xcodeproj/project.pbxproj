@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,9 +22,11 @@
 		358AE3C4289930F60040F747 /* BeachDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358AE3C2289930F60040F747 /* BeachDataCell.swift */; };
 		358AE3C5289930F60040F747 /* BeachDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358AE3C3289930F60040F747 /* BeachDataCell.xib */; };
 		35C7B51F2897BF3B00EDD2B2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C7B51E2897BF3B00EDD2B2 /* Models.swift */; };
+		A16AD10A45919E1AAAB35405 /* Pods_Smart_Buoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCCC986B06B104E7C2702B9 /* Pods_Smart_Buoy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08810950441C18D3BAA6F7F5 /* Pods-Smart Buoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Buoy.debug.xcconfig"; path = "Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy.debug.xcconfig"; sourceTree = "<group>"; };
 		35055BC528992E930044AA4F /* BeachDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDataController.swift; sourceTree = "<group>"; };
 		352182A72897B9B600464178 /* Smart Buoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Buoy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		352182AA2897B9B600464178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		358AE3C2289930F60040F747 /* BeachDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDataCell.swift; sourceTree = "<group>"; };
 		358AE3C3289930F60040F747 /* BeachDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDataCell.xib; sourceTree = "<group>"; };
 		35C7B51E2897BF3B00EDD2B2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3BCCC986B06B104E7C2702B9 /* Pods_Smart_Buoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Buoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE24838089DA59BCC29DF31 /* Pods-Smart Buoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Buoy.release.xcconfig"; path = "Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16AD10A45919E1AAAB35405 /* Pods_Smart_Buoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D554DF8DFCA9E442734920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCCC986B06B104E7C2702B9 /* Pods_Smart_Buoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3521829E2897B9B600464178 = {
 			isa = PBXGroup;
 			children = (
 				352182A92897B9B600464178 /* Smart Buoy */,
 				352182A82897B9B600464178 /* Products */,
+				6C10B3766F6F4F4291847406 /* Pods */,
+				09D554DF8DFCA9E442734920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +125,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		6C10B3766F6F4F4291847406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08810950441C18D3BAA6F7F5 /* Pods-Smart Buoy.debug.xcconfig */,
+				BCE24838089DA59BCC29DF31 /* Pods-Smart Buoy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 352182BB2897B9B700464178 /* Build configuration list for PBXNativeTarget "Smart Buoy" */;
 			buildPhases = (
+				D73E1E02E50F523EF0A4FE12 /* [CP] Check Pods Manifest.lock */,
 				352182A32897B9B600464178 /* Sources */,
 				352182A42897B9B600464178 /* Frameworks */,
 				352182A52897B9B600464178 /* Resources */,
+				140BF43B77C534E99F6904AB /* [CP] Embed Pods Frameworks */,
+				8BC86976E5A1470869F9A212 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,7 +174,7 @@
 				};
 			};
 			buildConfigurationList = 352182A22897B9B600464178 /* Build configuration list for PBXProject "Smart Buoy" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,6 +206,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		140BF43B77C534E99F6904AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC86976E5A1470869F9A212 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Buoy/Pods-Smart Buoy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73E1E02E50F523EF0A4FE12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Buoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		352182A32897B9B600464178 /* Sources */ = {
@@ -334,6 +421,7 @@
 		};
 		352182BC2897B9B700464178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08810950441C18D3BAA6F7F5 /* Pods-Smart Buoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,7 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,6 +452,7 @@
 		};
 		352182BD2897B9B700464178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE24838089DA59BCC29DF31 /* Pods-Smart Buoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,7 +467,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

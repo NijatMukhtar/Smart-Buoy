@@ -1,0 +1,6 @@
+framework module Pods_Smart_Buoy {
+  umbrella header "Pods-Smart Buoy-umbrella.h"
+
+  export *
+  module * { export * }
+}

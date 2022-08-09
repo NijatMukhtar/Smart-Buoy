@@ -1,1 +1,78 @@
-
+[
+{
+ "name": "Varna",
+ "beaches": [
+    {
+      "name": "Varna beach",
+      "waveHeight": "1.2m",
+      "tempratureOfWater": "22C",
+      "cleanlinessOfWater": "OK",
+      "image": "beach1",
+    },
+    {
+        "name": "Sahara beach",
+        "waveHeight": "0.6m",
+        "tempratureOfWater": "24C",
+        "cleanlinessOfWater": "Good",
+        "image": "beach2",
+    },
+    {
+        "name": "Trakata beach",
+        "waveHeight": "1.5m",
+        "tempratureOfWater": "21C",
+        "cleanlinessOfWater": "Excellent",
+        "image": "beach3",
+    },
+    {
+        "name": "Rappongi Beach",
+        "waveHeight": "4.2m",
+        "tempratureOfWater": "19C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach4",
+    },
+    {
+        "name": "Fichoza Beach Veteran",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "21C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach5",
+    },
+    {
+        "name": "Beach Golden Sands",
+        "waveHeight": "0.7m",
+        "tempratureOfWater": "26C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach6",
+    },
+    {
+        "name": "Asparuhovo beach",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "28C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach7",
+    },
+    {
+        "name": "Albena Beach",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "23C",
+        "cleanlinessOfWater": "Good",
+        "image": "beach8",
+    },
+    {
+        "name": "Nirvana Beach",
+        "waveHeight": "1.6m",
+        "tempratureOfWater": "23C",
+        "cleanlinessOfWater": "OK",
+        "image": "beach9",
+    },
+    {
+        "name": "Noi Beach",
+        "waveHeight": "1.3m",
+        "tempratureOfWater": "12C",
+        "cleanlinessOfWater": "Ok",
+        "image": "beach10",
+    },
+ ]
+ 
+}
+]
